@@ -40,7 +40,7 @@ if data is not None:
     selected_featuresM =  MachinesM.select_dtypes(include=['int', 'float'])
     correlation_matrix_selected_M = selected_featuresM.corr()
     
-    selected_featuresH =  MachinesM.select_dtypes(include=['int', 'float'])
+    selected_featuresH =  MachinesH.select_dtypes(include=['int', 'float'])
     correlation_matrix_selected_H = selected_featuresH.corr()
     
     
@@ -60,7 +60,7 @@ if data is not None:
     # Rotar los tick labels del eje x en 45 grados
     heatmap.set_xticklabels(heatmap.get_xticklabels(), rotation=30,fontname='Arial', fontsize=10)
     heatmap.set_yticklabels(heatmap.get_yticklabels(),fontname='Arial', fontsize=10)
-    plt.title('Matriz de Correlación: correlation_matrix_selected_L')
+    plt.title('Matriz de Correlación:Maquinas Tipo L')
     plt.savefig('correlation_matrix_selected_L.jpg')
     plt.show()
 
@@ -71,7 +71,7 @@ if data is not None:
     # Rotar los tick labels del eje x en 45 grados
     heatmap.set_xticklabels(heatmap.get_xticklabels(), rotation=30,fontname='Arial', fontsize=10)
     heatmap.set_yticklabels(heatmap.get_yticklabels(),fontname='Arial', fontsize=10)
-    plt.title('Matriz de Correlación: correlation_matrix_selected_M')
+    plt.title('Matriz de Correlación: Maquinas Tipo M')
     plt.savefig('correlation_matrix_selected_M.jpg')
     plt.show()
 
@@ -82,7 +82,7 @@ if data is not None:
     # Rotar los tick labels del eje x en 45 grados
     heatmap.set_xticklabels(heatmap.get_xticklabels(), rotation=30,fontname='Arial', fontsize=10)
     heatmap.set_yticklabels(heatmap.get_yticklabels(),fontname='Arial', fontsize=10)
-    plt.title('Matriz de Correlación: correlation_matrix_selected_H')
+    plt.title('Matriz de Correlación: : Maquinas Tipo H')
     plt.savefig('correlation_matrix_selected_H.jpg')
     plt.show()
 
